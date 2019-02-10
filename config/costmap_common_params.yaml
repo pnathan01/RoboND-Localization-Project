@@ -1,11 +1,15 @@
 map_type: costmap
 
-obstacle_range: 0.0
-raytrace_range: 0.0
+<!-- Range for sensor to read obstacles-->
+obstacle_range: 2.5
+<!-- Range to raytrace freespace -->
+raytrace_range: 3.0
+<!-- Delay in TF Data-->
+transform_tolerance: 0.5
 
-transform_tolerance: 0.0
-
-inflation_radius: 0.0
+robot_radius: 0.1
+<!-- Radius to which costmap inflates obstacle cost values-->
+inflation_radius: 1.0
 
 observation_sources: laser_scan_sensor
 
